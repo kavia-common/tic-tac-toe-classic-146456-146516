@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9fafb"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Player Knight's turn"
+        android:textColor="#111827"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#FFFFFFFF" />
+
+    <GridLayout
+        android:id="@+id/boardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:alignmentMode="alignBounds"
+        android:columnCount="3"
+        android:rowCount="3"
+        android:useDefaultMargins="true"
+        android:padding="8dp">
+
+        <!-- 9 cells as ImageButtons -->
+        <ImageButton
+            android:id="@+id/cell_0_0"
+            style="@style/TicCell" />
+        <ImageButton
+            android:id="@+id/cell_0_1"
+            style="@style/TicCell" />
+        <ImageButton
+            android:id="@+id/cell_0_2"
+            style="@style/TicCell" />
+
+        <ImageButton
+            android:id="@+id/cell_1_0"
+            style="@style/TicCell" />
+        <ImageButton
+            android:id="@+id/cell_1_1"
+            style="@style/TicCell" />
+        <ImageButton
+            android:id="@+id/cell_1_2"
+            style="@style/TicCell" />
+
+        <ImageButton
+            android:id="@+id/cell_2_0"
+            style="@style/TicCell" />
+        <ImageButton
+            android:id="@+id/cell_2_1"
+            style="@style/TicCell" />
+        <ImageButton
+            android:id="@+id/cell_2_2"
+            style="@style/TicCell" />
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#2563EB" />
+
+</LinearLayout>
